@@ -4,8 +4,8 @@ print("Mary had a little lamb.")
 print("Its fleece was white as {}.".format('snow'))
 # This line prints a simple string sentence
 print("And everywhere that Mary went.")
-This line prints the . (period) ten times due to multi by 10
-print("." * 10) # what'd that do?
+# This line prints the . (period) ten times due to multi by 10
+print("." * 10)  # what'd that do?
 
 # The following lines assign single chracters to unique variables each.
 end1 = "C"
