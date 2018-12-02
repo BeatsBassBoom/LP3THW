@@ -1,6 +1,6 @@
 import ex45GameFile
 import sys
-sys.path.append()
+sys.path.append('')
 
 
 '''
@@ -15,4 +15,4 @@ is next or setting a variable of what room is next.
 
 print(ex45GameFile.roll_two_dice())
 
-roll_again()
+ex45GameFile.roll_again()
