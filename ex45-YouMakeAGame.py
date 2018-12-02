@@ -1,6 +1,6 @@
 import ex45GameFile
 import sys
-sys.path.append('D:\Dropbox\Code\LP3THW')
+sys.path.append()
 
 
 '''
@@ -15,4 +15,4 @@ is next or setting a variable of what room is next.
 
 print(ex45GameFile.roll_two_dice())
 
-play_again = input("Would you like to roll again? (Y)es or (N)o? ")
+roll_again()
