@@ -2,3 +2,7 @@ LP3THW.pdf
 .vscode/
 LPTHW.pdf
 __pycache__/
+projects\skeleton\tests\__pycache__
+projects\skeleton\NAME\__pycache__
+projects\skeleton\docs\.gitkeep
+projects\skeleton\bin\.gitkeep
