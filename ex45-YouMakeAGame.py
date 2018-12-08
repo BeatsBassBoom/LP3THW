@@ -13,6 +13,10 @@ is next or setting a variable of what room is next.
 '''
 
 
-print(ex45GameFile.roll_two_dice())
+def main():
+    print(ex45GameFile.roll_two_dice())
+    ex45GameFile.roll_again()
 
-ex45GameFile.roll_again()
+
+if __name__ == '__main__':
+    main()

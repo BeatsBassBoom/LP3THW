@@ -1,1 +1,1 @@
-"# LP3THW" 
+# LP3THW
