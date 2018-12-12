@@ -11,7 +11,7 @@ There are no instructions really. This is not a tool for anyone to run, just all
 
 ## Authors
 
-- **BeatsBassBoom** - _Just Starting Out In Coding_ [My Repo](https://github.com/BeatsBassBoom)
+:star: **BeatsBassBoom** - _Just Starting Out In Coding_ [My Repo](https://github.com/BeatsBassBoom)
 
 ## License
 
