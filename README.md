@@ -1,7 +1,7 @@
 # LP3THW (Learn Python 3 The Hard Way) with BeatsBassBoom
 
 <img src="https://github.com/BeatsBassBoom/LP3THW/blob/master/BeatsBassBoom.png" align="right"
-     title="Logo of BeatsBassBoom" width="120" height="178">
+     title="Logo of BeatsBassBoom" width="120" height="120">
 
 This repository is just all my code from LP3THW. In order to hold myself accountable for frequent coding I started this repository. It also served as practice to learn Git, Markdown, and all the comes with coding Cybersecurity tools.
 
