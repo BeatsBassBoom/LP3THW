@@ -21,3 +21,8 @@ projects/ex47-AutomatedTesting/docs/.gitkeep
 projects/ex47-AutomatedTesting/bin/.gitkeep
 projects/ex47-AutomatedTesting/ex47/__pycache__
 projects/ex47-AutomatedTesting/tests/__pycache__
+
+projects/ex48-AdvancedUserInput/bin/.gitkeep
+projects/ex48-AdvancedUserInput/docs/.gitkeep
+projects/ex48-AdvancedUserInput/ex48/__pycache__
+projects/ex48-AdvancedUserInput/tests/__pycache__

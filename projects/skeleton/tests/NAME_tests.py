@@ -12,3 +12,5 @@ def teardown():
 
 def test_basic():
     print("I RAN!", end='')
+
+#  source /D/Documents/.venvs/lpthw/Scripts/activate
