@@ -2,8 +2,13 @@
 # north, south, east, west, down, up, left, right, back
 
 
-def direction_words():
-    pass
+def directions(words):
+    direction_words = ("north", "south", "east", "west")
+    direction_index = 0
+    while direction_index < len(direction_words):
+        if direction_words[direction_index] in words.split():
+            return([('direction', direction_words[direction_index])])
+        direction_index += 1
 
 # go, stop, kill, eat
 
@@ -31,10 +36,11 @@ def numbers():
 
 
 def scan(words):
-    pass
+    second_word = ('direction', 'north')
+    return([second_word])
 
 
-stuff = input('> ')
+stuff = " Hi my name is north west down go"
 words = stuff.split()
 
 first_word = ('verb', 'go')
