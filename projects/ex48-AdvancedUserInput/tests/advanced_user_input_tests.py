@@ -10,12 +10,12 @@ def test_directions():
                           ('direction', 'east')])
 
 
-# def test_verbs():
-#     assert_equal(aui.scan("go"), [('verb', 'go')])
-#     result = aui.scan("go kill eat")
-#     assert_equal(result, [('verb', 'go'),
-#                           ('verb', 'kill'),
-#                           ('verb', 'eat')])
+def test_verbs():
+    assert_equal(aui.scan("go"), [('verb', 'go')])
+    result = aui.scan("go kill eat")
+    assert_equal(result, [('verb', 'go'),
+                          ('verb', 'kill'),
+                          ('verb', 'eat')])
 
 
 # def test_stops():
