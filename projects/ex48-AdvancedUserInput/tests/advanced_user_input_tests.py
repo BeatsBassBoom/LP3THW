@@ -1,4 +1,6 @@
+# Nose test import
 from nose.tools import *
+# Importing the ex48 user input file.
 from ex48 import advanced_user_input as aui
 
 
