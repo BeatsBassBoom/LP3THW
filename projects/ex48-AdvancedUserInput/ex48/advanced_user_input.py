@@ -10,24 +10,24 @@ def scan(stuff):
         if index in direction_words:
             gamer_output.append(('direction', index))
         elif index in verb_words:
-            gamer_output.append('verb', index)
+            gamer_output.append(('verb', index))
         elif index in stop_words:
             gamer_output.append(('stop', index))
         elif index in noun_Words:
             gamer_output.append(('noun', index))
         elif index.isdigit() and len(index) <= 5:
             gamer_output.append(('number', int(index)))
-        else:
-            gamer_output.append(('error', index))
+        # else:
+        #     error_output.append(('error', index))
     return(gamer_output)
 
 
-stuff = "north west"
+stuff = "go north west bear"
 
-first_word = ('verb', 'go')
-second_word = ('direction', 'north')
-third_word = ('direction', 'west')
-sentence = [first_word, second_word, third_word]
+# first_word = ('verb', 'go')
+# second_word = ('direction', 'north')
+# third_word = ('direction', 'west')
+# sentence = [first_word, second_word, third_word]
 
 
 # #Set up datastructure

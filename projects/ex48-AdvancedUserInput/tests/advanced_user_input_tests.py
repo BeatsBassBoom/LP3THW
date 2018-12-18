@@ -18,26 +18,26 @@ def test_verbs():
                           ('verb', 'eat')])
 
 
-# def test_stops():
-#     assert_equal(aui.scan("the"), [('stop', 'the')])
-#     result = aui.scan("the in of")
-#     assert_equal(result, [('stop', 'the'),
-#                           ('stop', 'in'),
-#                           ('stop', 'of')])
+def test_stops():
+    assert_equal(aui.scan("the"), [('stop', 'the')])
+    result = aui.scan("the in of")
+    assert_equal(result, [('stop', 'the'),
+                          ('stop', 'in'),
+                          ('stop', 'of')])
 
 
-# def test_nouns():
-#     assert_equal(aui.scan("bear"), [('noun', 'bear')])
-#     result = aui.scan("bear princess")
-#     assert_equal(result, [('noun', 'bear'),
-#                           ('noun', 'princess')])
+def test_nouns():
+    assert_equal(aui.scan("bear"), [('noun', 'bear')])
+    result = aui.scan("bear princess")
+    assert_equal(result, [('noun', 'bear'),
+                          ('noun', 'princess')])
 
 
-# def test_numbers():
-#     assert_equal(aui.scan("1234"), [('number', 1234)])
-#     result = aui.scan("3 91234")
-#     assert_equal(result, [('number', 3),
-#                           ('number', 91234)])
+def test_numbers():
+    assert_equal(aui.scan("1234"), [('number', 1234)])
+    result = aui.scan("3 91234")
+    assert_equal(result, [('number', 3),
+                          ('number', 91234)])
 
 
 # def test_errors():
