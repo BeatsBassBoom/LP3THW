@@ -42,10 +42,10 @@ def test_numbers():
                           ('number', 91234)])
 
 
-# def test_errors():
-#     assert_equal(aui.scan("ASDFADFASDF"),
-#                  [('error', 'ASDFADFASDF')])
-#     result = aui.scan("bear IAS princess")
-#     assert_equal(result, [('noun', 'bear'),
-#                           ('error', 'IAS'),
-#                           ('noun', 'princess')])
+def test_errors():
+    assert_equal(aui.scan("ASDFADFASDF"),
+                 [('error', 'ASDFADFASDF')])
+    result = aui.scan("bear IAS princess")
+    assert_equal(result, [('noun', 'bear'),
+                          ('error', 'IAS'),
+                          ('noun', 'princess')])
