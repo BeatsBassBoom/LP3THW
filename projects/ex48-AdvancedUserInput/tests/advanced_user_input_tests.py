@@ -6,9 +6,10 @@ from ex48 import advanced_user_input as aui
 
 def test_directions():
     assert_equal(aui.scan("north"), [('direction', 'north')])
-    result = aui.scan("north south east")
+    result = aui.scan("north south west east")
     assert_equal(result, [('direction', 'north'),
                           ('direction', 'south'),
+                          ('direction', 'west'),
                           ('direction', 'east')])
 
 

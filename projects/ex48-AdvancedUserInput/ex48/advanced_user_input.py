@@ -27,10 +27,10 @@ def scan(word_play):
     return(gamer_output)
 
 
-stuff = input('> ')
-word_play = "go north west bear"
+# stuff = input('> ')
+word_play = "go north west bear east"
 
-first_word = ('verb', 'go')
-second_word = ('direction', 'north')
-third_word = ('direction', 'west')
-sentence = [first_word, second_word, third_word]
+# first_word = ('verb', 'go')
+# second_word = ('direction', 'north')
+# third_word = ('direction', 'west')
+# sentence = [first_word, second_word, third_word]
