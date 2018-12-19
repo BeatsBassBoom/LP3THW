@@ -27,7 +27,7 @@ def scan(word_play):
     return(gamer_output)
 
 
-# stuff = input('> ')
+stuff = input('> ')
 word_play = "go north west bear east"
 
 # first_word = ('verb', 'go')
