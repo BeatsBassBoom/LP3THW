@@ -12,6 +12,8 @@ about them. There’s plenty of ways to do this, but consider having each room r
 is next or setting a variable of what room is next.
 '''
 
+# main to start up the call for the game.
+
 
 def main():
     print(ex45GameFile.roll_two_dice())

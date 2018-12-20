@@ -3,6 +3,8 @@ from random import randint
 # Strips leading white space from from lines.
 from textwrap import dedent
 
+# Sets up the example scene class.
+
 
 class Scene(object):
 
@@ -12,15 +14,19 @@ class Scene(object):
         exit(1)
 
 
+# Game engine where a lot of the play controls happen
 class Engine(object):
 
+    # Starts the map for the game.
     def __init__(self, scene_map):
         self.scene_map = scene_map
 
+    # Initiates users play across maps by changing scenes until the end of game.
     def play(self):
         current_scene = self.scene_map.opening_scene()
         last_scene = self.scene_map.next_scene('finished')
 
+        # Loop through all scenes until the end of game.
         while current_scene != last_scene:
             next_scene_name = current_scene.enter()
             current_scene = self.scene_map.next_scene(next_scene_name)
@@ -29,6 +35,7 @@ class Engine(object):
         current_scene.enter()
 
 
+# Prints out the players last words.
 class Death(Scene):
 
     quips = [
@@ -44,6 +51,7 @@ class Death(Scene):
         exit(1)
 
 
+# Takes users input as they enter the first corridor in the game.
 class CentralCorridor(Scene):
 
     def enter(self):
@@ -104,6 +112,8 @@ class CentralCorridor(Scene):
             print("DOES NOT COMPUTE!")
             return 'central_corridor'
 
+# Weapon class for the user to leverage during game play if they can enter it.
+
 
 class LaserWeaponArmory(Scene):
 
@@ -146,6 +156,7 @@ class LaserWeaponArmory(Scene):
             return 'death'
 
 
+# User has to make the right decisions to cross the bridge.
 class TheBridge(Scene):
 
     def enter(self):
@@ -189,6 +200,7 @@ class TheBridge(Scene):
             return "the_bridge"
 
 
+# If successful the user will make it off the rock.
 class EscapePod(Scene):
 
     def enter(self):
@@ -225,6 +237,8 @@ class EscapePod(Scene):
 
             return 'finished'
 
+# Let's the user know if they won or not.
+
 
 class Finished(Scene):
 
@@ -233,6 +247,7 @@ class Finished(Scene):
         return 'finished'
 
 
+# Creates all the maps for the user to play on in the game.
 class Map(object):
 
     scenes = {
