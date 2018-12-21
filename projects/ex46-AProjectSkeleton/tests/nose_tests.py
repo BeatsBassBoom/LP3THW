@@ -1,3 +1,4 @@
+# First test skeleton
 from nose.tools import *
 import nose_runner
 
