@@ -1,4 +1,7 @@
+#ex49 Making Sentences
 # This file is where we are implementing exercise 49
+
+# Parser class to throw my own exceptions.
 class ParserError(Exception):
     pass
 
@@ -11,7 +14,7 @@ class Sentence(object):
         self.verb = verb[1]
         self.object = obj[1]
 
-
+# Peeks at a list of words and returns its type of word.
 def peek(word_list):
     if word_list:
         word = word_list[0]
@@ -19,7 +22,7 @@ def peek(word_list):
     else:
         return None
 
-
+# Confirms the word is the correct type, takes it out of the list and returns the word.
 def match(word_list, expecting):
     if word_list:
         word = word_list.pop(0)
@@ -31,7 +34,7 @@ def match(word_list, expecting):
     else:
         return None
 
-
+# Skips words that are not useful to the sentence (stop words)
 def skip(word_list, word_type):
     while peek(word_list) == word_type:
         match(word_list, word_type)
