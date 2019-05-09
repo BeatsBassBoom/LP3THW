@@ -39,7 +39,7 @@ def skip(word_list, word_type):
     while peek(word_list) == word_type:
         match(word_list, word_type)
 
-
+# Handles parsing verbs
 def parse_verb(word_list):
     skip(word_list, 'stop')
 
@@ -48,7 +48,7 @@ def parse_verb(word_list):
     else:
         raise ParserError("Expected a verb next.")
 
-
+# Skip any words, peek ahead to see if next word is a verb, if not raise error, otherwise match the word and take it off the list.
 def parse_object(word_list):
     skip(word_list, 'stop')
     next_word = peek(word_list)
@@ -59,7 +59,7 @@ def parse_object(word_list):
     else:
         raise ParserError("Expected a noun or direction next.")
 
-
+# Skip stop words, peek ahead to see if sentence is corret. 
 def parse_subject(word_list):
     skip(word_list, 'stop')
     next_word = peek(word_list)
