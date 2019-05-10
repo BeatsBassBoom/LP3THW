@@ -33,7 +33,8 @@ def test_nouns():
     assert_equal(aui.scan("bear"), [('noun', 'bear')])
     result = aui.scan("bear princess")
     assert_equal(result, [('noun', 'bear'),
-                          ('noun', 'princess')])
+                          ('noun', 'princess'),
+                          ('noun', 'honey')])
 
 
 def test_numbers():
