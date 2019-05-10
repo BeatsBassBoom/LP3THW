@@ -1,6 +1,7 @@
 # Nose test import also where assert_raises function lives
 from nose.tools import *
 from ex48 import parser
+from ex48 import advanced_user_input as aui
 
 def test_ParserError():
     pass
