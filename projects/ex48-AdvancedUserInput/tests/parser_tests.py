@@ -1,4 +1,4 @@
-# Nose test import
+# Nose test import also where assert_raises function lives
 from nose.tools import *
 from ex48 import parser
 
@@ -7,9 +7,18 @@ def test_ParserError():
 
 def test_Sentence():
     pass
+    # assert_equal(parser.Sentence("bear eat honey"),([('noun', 'bear'), ('verb', 'eat'), ('noun', 'honey')])
+    # result = parser.Sentence("bear eat honey")
+    # assert_equal(result, [('noun', 'bear'),
+    #     ('verb', 'eat'),
+    #     ('noun', 'honey')])
 
 def test_peek():
-    pass
+    assert_equal(parser.peek("eat"), [("bear", "eat", "honey")])
+    result = parser.peek("bear eat honey")
+    assert_equal(result, [('verb', 'go'),
+                          ('verb', 'kill'),
+                          ('verb', 'eat')])
 
 def test_match():
     pass
