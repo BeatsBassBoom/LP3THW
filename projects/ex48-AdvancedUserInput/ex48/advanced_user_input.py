@@ -5,7 +5,7 @@ def scan(word_play):
     direction_words = ("north", "south", "east", "west")
     verb_words = ("go", "kill", "eat")
     stop_words = ("the", "in", "of")
-    noun_Words = ("bear", "princess")
+    noun_Words = ("bear", "princess", "honey")
 
     # List that will be used to categorize all the user input to return later in the test.
     gamer_output = []
