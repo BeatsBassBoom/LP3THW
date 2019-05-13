@@ -11,6 +11,8 @@ def test_ParserError():
 def test_Sentence():
     pass
 
+# analyzing the peek function with the word eat. not sure why this works yet though.
+
 
 def test_peek():
     word_list = aui.scan('eat')
