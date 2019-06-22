@@ -4,7 +4,7 @@ def scan(word_play):
     # Store to contain all the possible user input options.
     direction_words = ("north", "south", "east", "west")
     verb_words = ("go", "kill", "eat")
-    stop_words = ("the", "in", "of")
+    stop_words = ("the", "in", "of", "to")
     noun_Words = ("bear", "princess", "honey")
 
     # List that will be used to categorize all the user input to 

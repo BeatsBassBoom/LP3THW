@@ -21,7 +21,23 @@ def test_peek():
 
 
 def test_match():
-    pass
+    word_list = scan('princess go to the door')
+    word_list_two = scan('princess go to the door')
+
+    first_result = match(word_list, 'noun')
+    second_result = match(word_list, 'verb')
+    third_result = match(scan(''), ' ')
+    fourth_result = match(word_list, 'stop')
+
+    first_expected_value = ('noun', 'princess')
+    second_expected_value = ('verb', 'go')
+    third_expected_value = None
+    fourth_expected_value = ('stop', 'to')
+    
+    assert_equal(first_result, first_expected_value)
+    assert_equal(second_result, second_expected_value)
+    assert_equal(third_result, third_expected_value)
+    assert_equal(fourth_result, fourth_expected_value)
 
 
 def test_skip():

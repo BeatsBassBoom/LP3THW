@@ -22,7 +22,8 @@ def peek(word_list):
     else:
         return None
 
-# Confirms the word is the correct type, takes it out of the list and returns the word.
+# Confirms the word is the correct type, takes it out of 
+# the list and returns the word.
 def match(word_list, expecting):
     if word_list:
         word = word_list.pop(0)
