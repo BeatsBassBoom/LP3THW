@@ -7,7 +7,8 @@ def scan(word_play):
     stop_words = ("the", "in", "of")
     noun_Words = ("bear", "princess", "honey")
 
-    # List that will be used to categorize all the user input to return later in the test.
+    # List that will be used to categorize all the user input to 
+    # return later in the test.
     gamer_output = []
     # Loop across all the split words for category association.
     for index in words:
@@ -27,7 +28,7 @@ def scan(word_play):
     return(gamer_output)
 
 
-stuff = input('> ')
+# stuff = input('> ')
 word_play = "go north west bear east"
 
 # first_word = ('verb', 'go')
