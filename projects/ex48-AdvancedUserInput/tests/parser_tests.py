@@ -22,7 +22,6 @@ def test_peek():
 
 def test_match():
     word_list = scan('princess go to the door')
-    # word_list_two = scan('princess go to the door')
 
     first_result = match(word_list, 'noun')
     second_result = match(word_list, 'verb')
