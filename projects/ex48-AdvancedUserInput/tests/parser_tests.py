@@ -44,8 +44,7 @@ def test_match():
 def test_skip():
     word_list = scan('princess go to the door')
 
-    skip(word_list, 'noun')
-    skip(word_list, 'verb')
+    skip(word_list, 'stop')
     result = word_list
     word_list.pop(0)
     expected_value = word_list
@@ -53,7 +52,15 @@ def test_skip():
 
 
 def test_parse_verb():
-    pass
+    word_list = scan('go to the door')
+
+    expected_value = scan('go to the door').pop(0)
+    result = parse_verb(word_list)
+    assert_equal(result, expected_value)
+
+    word_list_two = scan('princess go to the door')
+
+    assert_raises(ParserError, parse_verb, word_list_two)
 
 
 def test_parse_object():
