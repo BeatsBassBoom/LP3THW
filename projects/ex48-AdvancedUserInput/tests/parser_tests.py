@@ -64,7 +64,15 @@ def test_parse_verb():
 
 
 def test_parse_object():
-    pass
+    word_list = scan('princess go to the door')
+
+    expected_value = scan('princess go to the door').pop(0)
+    result = parse_object(word_list)
+    assert_equal(result, expected_value)
+
+    word_list_two = scan('go to the door')
+
+    assert_raises(ParserError, parse_object, word_list_two)
 
 
 def test_parse_subject():
