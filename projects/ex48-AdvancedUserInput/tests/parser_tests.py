@@ -3,14 +3,6 @@ from nose.tools import *
 from ex48.parser import *
 from ex48.advanced_user_input import *
 
-
-def test_ParserError():
-    pass
-
-
-def test_Sentence():
-    pass
-
 # analyzing the peek function with the word eat.
 # not sure why this works yet though.
 
@@ -85,7 +77,3 @@ def test_parse_subject():
     word_list_two = scan('go to the door')
 
     assert_raises(ParserError, parse_object, word_list_two)
-
-
-def test_parse_sentence():
-    pass
