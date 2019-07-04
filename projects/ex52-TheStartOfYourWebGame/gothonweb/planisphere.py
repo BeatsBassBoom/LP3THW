@@ -8,5 +8,6 @@ class Room(object):
     def go(self, direction):
         return self.paths.get(direction, None)
 
+# Testing
     def add_paths(self, paths):
         self.paths.update(paths)
