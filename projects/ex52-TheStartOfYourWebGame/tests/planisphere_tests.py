@@ -1,5 +1,5 @@
 from nose.tools import *
-from ex47.game import Room
+from gothonweb.planisphere import Room
 
 
 def test_room():
