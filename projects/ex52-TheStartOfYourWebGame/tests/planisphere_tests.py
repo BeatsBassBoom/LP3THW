@@ -32,3 +32,12 @@ def test_map():
     assert_equal(start.go('west'), west)
     assert_equal(start.go('west').go('east'), start)
     assert_equal(start.go('down').go('up'), start)
+
+
+def test_gothon_game_map():
+    start_room = load_room(START)
+    assert_equal(start_room.go('shoot!'), generic_death)
+    assert_equal(start_room.go('dodge!'), generic_death)
+
+    room = start_room.go('tell a joke')
+    assert_equal(room, laser_weapon_armory)
